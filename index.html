@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>CRM</h1>
+    <input id="name" placeholder="Ім'я клієнта" />
+    <input id="email" placeholder="Email клієнта" />
+    <button onclick="addCustomer()">Додати клієнта</button>
+
+    <hr>
+
+    <input id="purchaseId" placeholder="ID клієнта" />
+    <input id="amount" placeholder="Сума покупки" />
+    <button onclick="recordPurchase()">Додати покупку</button>
+
+    <hr>
+
+    <button onclick="showVIP()">Показати VIP клієнтів</button>
+    <button onclick="sendPromotions()">Розсилка неактивним</button>
+
+    <div id="output"></div>
+  </div>
+  <script src="crm.js"></script>
+</body>
+</html>
